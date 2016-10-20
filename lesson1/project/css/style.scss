@@ -1,0 +1,10 @@
+/* サンプルのSassファイル */
+
+$color:#ccc;
+
+div {
+  background-color: $color;
+  h1 {
+    font-size: 2rem;
+  }
+}
