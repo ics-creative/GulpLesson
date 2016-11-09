@@ -6,13 +6,16 @@
 var gulp = require("gulp");
 var del = require("del");
 
-// srcフォルダのソースファイルをdistフォルダにコピーするタスクです。
+// srcフォルダのtest.htmlファイルをdistフォルダにコピーするタスクです。
 gulp.task("copy", function () {
-  gulp.src("src/**")
+  return gulp.src("src/test.html")
     .pipe(gulp.dest("dist/"));
 });
 
-// distフォルダ以下のSassファイルを削除するタスクです。
+// srcフォルダのtest.htmlファイルを削除するタスクです。
 gulp.task("clean", function () {
-  del("dist/**/*.scss");
+  del("src/test.html");
 });
+
+// srcフォルダのtest.htmlファイルをdistフォルダに移動するタスクです。
+gulp.task("default", ["copy", "clean"]);
