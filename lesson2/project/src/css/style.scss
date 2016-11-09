@@ -1,0 +1,23 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  padding: 10px;
+  background-image: linear-gradient(to bottom, #1E5799, #a0c7e5);
+}
+
+// フォントの色の変数
+$fontColor: #525252;
+
+h1 {
+  color: $fontColor;
+}
+
+p {
+  color: $fontColor;
+}
+
+a {
+  color: $fontColor;
+}
