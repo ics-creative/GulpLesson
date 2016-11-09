@@ -4,18 +4,20 @@ html, body {
 
 body {
   padding: 10px;
-  background-image: -webkit-linear-gradient(top, #1E5799, #a0c7e5);
   background-image: linear-gradient(to bottom, #1E5799, #a0c7e5);
 }
 
+// フォントの色の変数
+$fontColor: #525252;
+
 h1 {
-  color: #525252;
+  color: $fontColor;
 }
 
 p {
-  color: #525252;
+  color: $fontColor;
 }
 
 a {
-  color: #525252;
+  color: $fontColor;
 }
