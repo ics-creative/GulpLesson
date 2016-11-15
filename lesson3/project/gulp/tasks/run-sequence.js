@@ -37,7 +37,7 @@ gulp.task("task2-sass", function () {
 var concat = require("gulp-concat");
 
 gulp.task("task2-concat", function () {
-  return gulp.src("src/js/*.js")
+  return gulp.src(["src/js/*.js", "!src/js/script.js"]) // script.js意外のJSを操作対象に
     .pipe(concat("script.js"))
     .pipe(gulp.dest("src/js"));
 });
