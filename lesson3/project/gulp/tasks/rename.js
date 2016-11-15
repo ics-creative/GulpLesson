@@ -1,9 +1,13 @@
-var gulp = require("gulp");
-var gulpRename = require("gulp-rename");
+/**
+ * 1-1. ファイルのリネーム
+ */
 
-gulp.task("rename-test", function() {
-  gulp.src("src/test.html")
-    .pipe(gulpRename("test2.html"))
-    .pipe(gulp.dest("src"));
+var gulp = require("gulp");
+var rename = require("gulp-rename");
+
+gulp.src("rename", function () {
+  gulp.src("src/css/hoge.css")
+    .pipe(rename("fuga.css")) // fuga.cssにリネームする
+    .pipe(gulp.dest("src/css"));
 });
 

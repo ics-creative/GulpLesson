@@ -1,0 +1,25 @@
+html, body {
+  height: 100%;
+}
+
+$fontColor: #525252;
+// フォントの色の変数
+$highLightColor: #EB4A4B;
+
+body {
+  color: $fontColor;
+}
+
+h1 {
+  font-weight: normal;
+  span {
+    font-weight: bold;
+    color: $highLightColor;
+  }
+}
+
+@import "spritesheet";
+
+.icon1 {
+  @include sprite($sprite-icon-1);
+}
