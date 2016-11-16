@@ -3,14 +3,16 @@
  */
 
 var gulp = require("gulp");
+var rename = require("gulp-rename");
 var imageMin = require("gulp-imagemin");
 var pngquant = require("imagemin-pngquant");
 
 gulp.task("imagemin", function () {
-  gulp.src("src/images/*")
+  gulp.src("src/images/animal.png")
     .pipe(imageMin(
-      [pngquant({quality: "70", speed: 1})]
+      [pngquant({quality: "70"})]
     ))
-    .pipe(gulp.dest("dist/images"));
+    .pipe(rename("animal.min.png"))
+    .pipe(gulp.dest("src/images"));
 });
 

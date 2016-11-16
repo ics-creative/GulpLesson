@@ -2,8 +2,8 @@
  * 1-5. スプライトシート作成
  */
 
-const gulp = require("gulp");
-const spritesmith = require("gulp.spritesmith");
+var gulp = require("gulp");
+var spritesmith = require("gulp.spritesmith");
 
 gulp.task("spritesheet", function () {
   var spriteData = gulp.src("src/spritesheet_parts/*")
