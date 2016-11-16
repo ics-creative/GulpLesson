@@ -1,0 +1,16 @@
+{
+  "name": "project_npm",
+  "version": "1.0.0",
+  "description": "",
+  "main": "gulpfile.js",
+  "scripts": {
+    "hoge": "echo 'Hello world!!'",
+    "build": "gulp build",
+    "watch": "gulp watch"
+  },
+  "license": "ISC",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^2.3.2"
+  }
+}
