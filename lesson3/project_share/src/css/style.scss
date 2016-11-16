@@ -1,0 +1,42 @@
+html, body {
+  height: 100%;
+}
+
+$fontColor: #525252;
+// フォントの色の変数
+$highLightColor: #EB4A4B;
+
+body {
+  color: $fontColor;
+}
+
+h1 {
+  font-weight: normal;
+  span {
+    font-weight: bold;
+    color: $highLightColor;
+  }
+}
+
+ul {
+  list-style: none;
+}
+
+ul li {
+  float: left;
+  margin: 10px;
+}
+
+// @import "spritesheet";
+//
+//.icon1 {
+//  @include sprite($sprite-icon-1);
+//}
+//
+//.icon2 {
+//  @include sprite($sprite-icon-2);
+//}
+//
+//.icon3 {
+//  @include sprite($sprite-icon-3);
+//}
