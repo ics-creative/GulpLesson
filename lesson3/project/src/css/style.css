@@ -55,8 +55,27 @@ The `sprites` mixin generates identical output to the CSS template
 
 @include sprites($spritesheet-sprites);
 */
+ul {
+  list-style: none; }
+
+ul li {
+  float: left;
+  margin: 10px; }
+
 .icon1 {
   background-image: url(../images/spritesheet.png);
   background-position: -209px 0px;
   width: 208px;
+  height: 209px; }
+
+.icon2 {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px -209px;
+  width: 209px;
+  height: 208px; }
+
+.icon3 {
+  background-image: url(../images/spritesheet.png);
+  background-position: 0px 0px;
+  width: 209px;
   height: 209px; }

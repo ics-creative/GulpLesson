@@ -24,3 +24,12 @@ gulp.task("spritesheet", function () {
   // スプライトシート用変数の書き出し
   spriteData.css.pipe(gulp.dest("src/css"));
 });
+
+// Sassのコンパイルタスクです
+var sass = require("gulp-sass");
+
+gulp.task("sass", function () {
+  return gulp.src("src/css/style.scss")
+    .pipe(sass())
+    .pipe(gulp.dest("src/css/"));
+});
