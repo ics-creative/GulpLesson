@@ -18,24 +18,25 @@ h1 {
   }
 }
 
-@import "spritesheet";
-
 ul {
-  list-style:none;
+  list-style: none;
 }
+
 ul li {
   float: left;
   margin: 10px;
 }
 
-.icon1 {
-  @include sprite($sprite-icon-1);
-}
-
-.icon2 {
-  @include sprite($sprite-icon-2);
-}
-
-.icon3 {
-  @include sprite($sprite-icon-3);
-}
+// @import "spritesheet";
+//
+//.icon1 {
+//  @include sprite($sprite-icon-1);
+//}
+//
+//.icon2 {
+//  @include sprite($sprite-icon-2);
+//}
+//
+//.icon3 {
+//  @include sprite($sprite-icon-3);
+//}
