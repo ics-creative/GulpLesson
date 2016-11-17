@@ -27,16 +27,16 @@ ul li {
   margin: 10px;
 }
 
-// @import "spritesheet";
-//
-//.icon1 {
-//  @include sprite($sprite-icon-1);
-//}
-//
-//.icon2 {
-//  @include sprite($sprite-icon-2);
-//}
-//
-//.icon3 {
-//  @include sprite($sprite-icon-3);
-//}
+@import "spritesheet";
+
+.icon1 {
+  @include sprite($sprite-icon-1);
+}
+
+.icon2 {
+  @include sprite($sprite-icon-2);
+}
+
+.icon3 {
+  @include sprite($sprite-icon-3);
+}

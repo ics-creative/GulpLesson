@@ -13,7 +13,7 @@ gulp.task("imagemin", function () {
       [pngquant({quality: "70"})]
     ))
     .pipe(rename(function (path) {
-      // ファイル名.min.cssにリネームする
+      // ファイル名.min.pngにリネームする
       path.basename += ".min";
     }))
     .pipe(gulp.dest("src/images"));
